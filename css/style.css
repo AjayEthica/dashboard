@@ -1,12 +1,4 @@
-#logox{  
-   margin-top:5px; 
-   font: 25px sans-serif;
-   color: #333;
-   background: #007FFF; 
-} 
-#mainspan{
-	color:#FFF;
-}
+
 .navbar-nav li a {
     margin:0 10px;
     font-weight:bold;font-size:20px;  
@@ -49,29 +41,6 @@ body{
     background-color: #fff;
 }
 
-#stats{
-    margin-top: 50px;
-    margin-bottom: 50px;
-    margin-left: 20px;
-    background-color: #f1f5f9;
-}
-
-.logo-img{
-    width: 65px;
-    float: left;
-}
-
-.stat-text{
-    text-align: left;
-}
-
-#timely-stats{
-    margin-left: 20px;
-}
-.schedule-logo{
-    width: 50px;
-    margin-left: 15px;
-}
 /* ROW */
 .row-bottom{
 	margin: 4rem 1rem 15rem; 
@@ -157,40 +126,11 @@ color:#FFF;
 .switch-button{
 	border: none;
     outline: none;
-    width:150px;
+    width:100%;
     background: #FFF;
 }
 
-.cards{
-    display: grid;
-    grid-template-columns: repeat(4,1fr);
-    grid-gap: 1rem;
-    margin-bottom: 5rem;
-    
-}
 
-.card-single{
-    display: flex;
-    justify-content: space-between;
-    background-color: #fff;
-    padding: 2rem;
-    border-radius: 2px;
-}
-
-.card-single span:first-child span{
-    color: gray;
-}
-
-.card-single div:last-child span{
-    font-size: 3rem;
-    color: #007FFF;
-}
-
-.cards-weekly{
-    display: grid;
-    grid-template-columns: repeat(5,1fr);
-    grid-gap: 3rem;
-}
 h1{font-weight:bold;font-size:50px;}
 h2{font-weight:bold;font-size:40px;}
 h3{font-weight:bold;font-size:30px;}
@@ -199,7 +139,6 @@ h4{font-weight: 500;font-size:20px;}
 /*Chat Box CSS Code*/
 #view-code:hover{opacity:1;}
 #chatbox{
-	
 	background:#fff;
 	border-radius:15px;
 	border:1px solid #d8dfe3;
@@ -207,20 +146,20 @@ h4{font-weight: 500;font-size:20px;}
 }
 
 #topmenu{
-	width:300px;	
+	width:100%;	
 	border-bottom:1px solid #d8dfe3;	
 }
 #topmenu h3{padding:20px 0 20px 20px;}
 #topmenu th {
   padding-top: 0;
-  width:150px;
+  width:50%;
   text-align:center;
 }
 .active {
   border-bottom:3px solid #333;
 }
 .friend{
-	height:70px;
+	height:80px;
 	border-bottom:1px solid #e7ebee;		
 	position:relative;
 }
@@ -229,33 +168,25 @@ h4{font-weight: 500;font-size:20px;}
 	cursor:pointer;
 }
 .friend img{
-	width:40px;
+	width:20%;
 	border-radius:50%;
-	margin:15px;
+	margin:10px 10px 5px 5px;
 	float:left;
-}
-.floatingImg{
-	width:40px;
-	border-radius:50%;
-	position:absolute;
-	top:0;
-	left:12px;
-	border:3px solid #fff;
 }
 .friend p{
-	padding:15px 0 0 0;			
+	padding:10px 0 0 0;			
 	float:left;
-	width:220px;
+	width:60%;
 	margin-bottom:0;
 }
 .friend p strong{
   font-weight:600;
-  font-size:15px;
+  font-size:0.78rem;
 	color:#597a96;  
 
 }
 .friend p span{
-	font-size:13px;
+	font-size:0.8rem;
 	font-weight:400;
 	color:#aab8c2;
 }
@@ -265,8 +196,8 @@ h4{font-weight: 500;font-size:20px;}
 	width:9px;
 	height:9px;
 	position:absolute;
-	top:31px;
-	right:17px;
+	top:25%;
+	right:7%;
 }
 .friend .status.away{background:#ffce54;}
 .friend .status.inactive{background:#eaeef0;}
@@ -279,16 +210,19 @@ h4{font-weight: 500;font-size:20px;}
 	border-radius:20px;
 	border:1px solid #d8dfe3;
 	text-align:left;
+	margin-top:10%;
 }
 .stat-top-row td{
 	padding:10px 0 10px 0;
 }
+
 .stat-bottom-class{
-	padding: 0 20px 0 0;
+	padding: 0 10px 0 0;
 	margin-top:3%;
 }
 .stat-bottom-row{
 	border-radius:20px;
+	margin-top:10%;
 	border:1px solid #d8dfe3;
 	text-align:center;
 }
@@ -306,4 +240,66 @@ table{
 }
 .footer-section li{
 	margin-top:10px;	
+}
+footer {
+    position: relative;
+    bottom: 0px;
+    width: 100%;
+}
+/*Mdia Queries*/
+@media (max-width:800px)  { .message-wrapper{ display: none;}}
+@media (max-width:800px)  { .button-wrapper{ display: none;}}
+@media (max-width : 765px)  { #chatbox{
+	margin-top:20%;
+}
+}
+@media (max-width : 765px)  { .friend img{
+	width:10%;
+}
+}
+@media (max-width : 765px)  { .friend p{
+	width:20%;
+}
+}
+@media (max-width : 686px)  { .friend p{
+	width:30%;
+}
+}
+@media (max-width : 485px)  { .friend p{
+	width:40%;
+}
+}
+@media (max-width : 485px)  { .friend img{
+	width:17%;
+}
+}
+@media (max-width : 386px)  { .friend p{
+	width:60%;
+}
+}
+@media (max-width : 386px)  { .friend img{
+	width:15%;
+}}
+@media (max-width : 770px)  { .card{
+    margin-top: 5%;
+    padding:20px;
+} }
+@media (max-width : 770px)  { .row-top{
+    margin: 4rem 1rem; 
+    border-radius: 30px;    
+	background: #FFF; 
+	border:1px solid #d8dfe3;	
+}  }
+
+@media (max-width : 770px)  { .card{
+	border-radius:30px;
+}	
+}
+@media (max-width : 546px)  { .quote h3{
+	font-size:25px;
+}	
+}
+@media (max-width : 470px)  { .quote h3{
+	font-size:20px;
+}	
 }
