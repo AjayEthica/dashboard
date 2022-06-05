@@ -191,7 +191,6 @@ h4{font-weight: 500;font-size:20px;}
 	color:#aab8c2;
 }
 .friend .status{
-	background:#26c281;
 	border-radius:50%;	
 	width:9px;
 	height:9px;
@@ -201,6 +200,7 @@ h4{font-weight: 500;font-size:20px;}
 }
 .friend .status.away{background:#ffce54;}
 .friend .status.inactive{background:#eaeef0;}
+.friend .status.available{background:#26c281;}
 
 .stat-top-class{
 	padding: 0 20px 0 0;
