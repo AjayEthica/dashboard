@@ -159,7 +159,7 @@ h4{font-weight: 500;font-size:20px;}
   border-bottom:3px solid #333;
 }
 .friend{
-	height:80px;
+	height:100px;
 	border-bottom:1px solid #e7ebee;		
 	position:relative;
 }
@@ -168,7 +168,7 @@ h4{font-weight: 500;font-size:20px;}
 	cursor:pointer;
 }
 .friend img{
-	width:20%;
+	width:15%;
 	border-radius:50%;
 	margin:10px 10px 5px 5px;
 	float:left;
@@ -302,4 +302,41 @@ footer {
 @media (max-width : 470px)  { .quote h3{
 	font-size:20px;
 }	
+}
+@media(max-width : 1440px) { .footer-logo img {
+    width: 15rem;
+    margin-top: 10px;
+}
+}
+@media(max-width : 880px) { .footer-logo img {
+    width: 12rem;
+    margin-top: 20px;
+}
+}
+@media(max-width : 700px) { .footer-logo img {
+    width: 9rem;
+}
+}
+@media(max-width : 600px) { .footer-logo img {
+    width: 6rem;
+}
+}
+@media(max-width : 450px) { .footer-logo img {
+    width: 4rem;
+}
+}
+@media(max-width : 880px) { .footer-text a {
+    font-size: 14px;
+}
+}
+@media(max-width : 600px) { .footer-text a {
+    font-size: 10px;
+}
+}
+@media(min-width : 1000px) { .friend{
+	height:80px;
+}
+}
+#stdfriends{
+	display:none;
 }
